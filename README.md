@@ -48,6 +48,12 @@ verbose: true
 ```
 
 ---
+## Run the tool with the configuration file:
+```
+python3 DorkGen.py --config config.yaml
+```
+
+---
 
 ## 📁 Project Structure
 
@@ -103,7 +109,7 @@ Install DorkGenerator using one of the following methods:
 ### 🤖 Usage
 Run DorkGenerator using the following command:
 ```sh
-python3 DorkGen.py targetdomain.com anotherdomain.com
+python3 DorkGen.py example.com test.com --output-dir ./output --format json --custom-dorks custom_dorks.txt --exclude "site:example.com inurl:admin" --limit 50 --dry-run --verbose
 ```
 
 ---
