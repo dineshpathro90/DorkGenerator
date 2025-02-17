@@ -1,5 +1,4 @@
 <div align="left" style="position: relative;">
-<img src="https://www.claranet.com/us/sites/all/assets/us/icon_web_hacking_training_css.svg" align="right" width="20%" style="margin: -20px 0 0 20px;">
 <h1>DORKGENERATOR</h1>
 <p align="left">
 	<em><code>❯ The Google Dorks Generator is a powerful tool designed to automate the process of creating Google dork queries for bug bounty hunting and security research. This tool allows you to replace a placeholder domain in a list of predefined dorks with one or more target domains, supporting various output formats and offering extensive customization options.</code></em>
