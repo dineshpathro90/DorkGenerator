@@ -1,3 +1,5 @@
+![Logo](https://github.com/dineshpathro90/DorkGenerator/blob/main/Dork.png)
+
 <div align="left" style="position: relative;">
 <h1>DORKGENERATOR</h1>
 <p align="left">
