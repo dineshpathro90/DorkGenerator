@@ -1,8 +1,8 @@
 <div align="left" style="position: relative;">
-<img src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/ec559a9f6bfd399b82bb44393651661b08aaf7ba/icons/folder-markdown-open.svg" align="right" width="30%" style="margin: -20px 0 0 20px;">
+<img src="https://www.claranet.com/us/sites/all/assets/us/icon_web_hacking_training_css.svg" align="right" width="20%" style="margin: -20px 0 0 20px;">
 <h1>DORKGENERATOR</h1>
 <p align="left">
-	<em><code>❯ REPLACE-ME</code></em>
+	<em><code>❯ The Google Dorks Generator is a powerful tool designed to automate the process of creating Google dork queries for bug bounty hunting and security research. This tool allows you to replace a placeholder domain in a list of predefined dorks with one or more target domains, supporting various output formats and offering extensive customization options.</code></em>
 </p>
 <p align="left">
 	<img src="https://img.shields.io/github/license/dineshpathro90/DorkGenerator?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
@@ -18,33 +18,18 @@
 </div>
 <br clear="right">
 
-## 🔗 Table of Contents
-
-- [📍 Overview](#-overview)
-- [👾 Features](#-features)
-- [📁 Project Structure](#-project-structure)
-  - [📂 Project Index](#-project-index)
-- [🚀 Getting Started](#-getting-started)
-  - [☑️ Prerequisites](#-prerequisites)
-  - [⚙️ Installation](#-installation)
-  - [🤖 Usage](#🤖-usage)
-  - [🧪 Testing](#🧪-testing)
-- [📌 Project Roadmap](#-project-roadmap)
-- [🔰 Contributing](#-contributing)
-- [🎗 License](#-license)
-- [🙌 Acknowledgments](#-acknowledgments)
 
 ---
-
-## 📍 Overview
-
-<code>❯ REPLACE-ME</code>
-
----
-
 ## 👾 Features
-
-<code>❯ REPLACE-ME</code>
+- Multiple Domains: Process multiple target domains concurrently.
+- Custom Dorks: Add custom dorks from a file to extend the default list.
+- Output Formats: Save the modified dorks in txt, json, or csv formats.
+- Exclude Dorks: Exclude specific dorks from being processed.
+- Limit: Limit the number of dorks processed per domain.
+- Dry Run: Perform a dry run to see what changes would be made without modifying any files.
+- Verbose Mode: Enable detailed logging for debugging purposes.
+- Configuration File: Use a YAML configuration file to specify all options.
+- Concurrency: Efficiently process multiple domains using concurrent execution.
 
 ---
 
@@ -66,7 +51,6 @@
 			<table>
 			<tr>
 				<td><b><a href='https://github.com/dineshpathro90/DorkGenerator/blob/master/DorkGen.py'>DorkGen.py</a></b></td>
-				<td><code>❯ REPLACE-ME</code></td>
 			</tr>
 			</table>
 		</blockquote>
@@ -99,26 +83,26 @@ Install DorkGenerator using one of the following methods:
 ❯ cd DorkGenerator
 ```
 
-3. Install the project dependencies:
-
-echo 'INSERT-INSTALL-COMMAND-HERE'
-
-
 
 ### 🤖 Usage
 Run DorkGenerator using the following command:
-echo 'INSERT-RUN-COMMAND-HERE'
-
-### 🧪 Testing
-Run the test suite using the following command:
-echo 'INSERT-TEST-COMMAND-HERE'
+```sh
+python3 DorkGen.py targetdomain.com anotherdomain.com
+```
 
 ---
-## 📌 Project Roadmap
+## 📌 Options
 
-- [X] **`Task 1`**: <strike>Implement feature one.</strike>
-- [ ] **`Task 2`**: Implement feature two.
-- [ ] **`Task 3`**: Implement feature three.
+- **`domains`**: One or more target domains to replace in the dorks.
+- **`--output-dir`**: Specify the output directory where the files will be saved. Default is the current directory.
+- **`--format`**: Choose the output file format (txt, json, csv). Default is txt.
+- **`--custom-dorks`**: Path to a file containing custom dorks. Each dork should be on a new line.
+- **`--exclude`**: Dorks to exclude from processing.
+- **`--limit`**: Limit the number of dorks processed per domain.
+- **`--dry-run`**: Perform a dry run to see what changes would be made without modifying any files.
+- **`--verbose`**: Enable verbose logging for debugging purposes.
+- **`--version`**: Show the version of the script and exit.
+- **`--config`**: Path to a YAML configuration file specifying domains, output directory, format, custom dorks file, exclude list, limit, dry run, and verbose mode.
 
 ---
 
