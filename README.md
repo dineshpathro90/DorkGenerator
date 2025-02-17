@@ -31,6 +31,23 @@
 - Concurrency: Efficiently process multiple domains using concurrent execution.
 
 ---
+## Configuration File
+#### You can use a YAML configuration file to specify all options. Here's an example configuration file:
+```
+domains:
+  - example.com
+  - test.com
+output_dir: ./output
+format: json
+custom_dorks: custom_dorks.txt
+exclude:
+  - "site:example.com inurl:admin"
+limit: 50
+dry_run: true
+verbose: true
+```
+
+---
 
 ## 📁 Project Structure
 
